@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+source /usr/local/cloudberry-db/greenplum_path.sh   # cloudberry: gpfdist в PATH под ssh (фикс №3)
 PWD=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 GPFDIST_PORT=$1
